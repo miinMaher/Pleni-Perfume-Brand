@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap");
+
+/* variables */
+
+:root { 
+    --primary-color: #FF2D78;       /* buttons, highlights, accents */
+    --secondary-color: #E8541A;     /* eyebrow labels, hover states */
+    --page-background: #FFF8F0;     /* main site background */
+    --body-text: #1A1A1A;           /* all main text */
+    --muted-text: #555555;          /* subtitles, captions, placeholders */
+    --heading-font: 'Unbounded', sans-serif;   /* all headings and titles */
+    --body-font: 'DM Sans', sans-serif;        /* body text, labels, buttons */
+    --spacing-sm: 16px;             /* small gaps */
+    --spacing-md: 32px;             /* medium gaps */
+    --spacing-lg: 64px;             /* section padding */
+    --spacing-xl: 120px;            /* large section padding */
+}
+
+/* Reset and base styles */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    background-color: var(--page-background);
+    color: var(--body-text);
+    font-family: var(--body-font);
+    line-height: 1.6;
+    user-select: none;
+}
+
+/* Global styles */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+/* Navbar styles */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  position: sticky;
+  top: 0;
+  background-color: var(--page-background);
+  border-bottom: 2px solid var(--primary-color);
+  z-index: 100;
+  transition: padding 0.4s ease;
+}
+
+.nav__links {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing-lg);
+}
+
+.nav__link {
+  font-family: var(--body-font);
+  font-size: 15px;
+  color: var(--body-text);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+.nav__link:hover {
+  color: var(--primary-color);
+}
+
+@keyframes shrinkLogo {
+  from { font-size: 200px; }
+  to { font-size: 28px; }
+}
+
+.nav__logo {
+  font-family: var(--heading-font);
+  font-weight: 900;
+  color: var(--primary-color);
+  text-decoration: none;
+  animation: shrinkLogo linear;
+  animation-timeline: scroll();
+  animation-range: 0px 300px;
+}
+
+.navbar--scrolled .nav__logo {
+  font-size: 28px;
+}
+
+/* hero section */
+
+.test {
+  margin-bottom: var(--spacing-xl);
+}
+
+.hero {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+.about-section {
+  height: 100vh;
+}
+
+.contact-section {
+  height: 100vh;
+}
