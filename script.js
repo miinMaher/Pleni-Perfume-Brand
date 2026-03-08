@@ -1,3 +1,6 @@
+
+/* navbar scroll effect  DO NOT TOUCH */
+
 window.addEventListener('scroll', () => {
   const navbar = document.querySelector('.navbar')
   if (window.scrollY > 272) {
@@ -5,4 +8,13 @@ window.addEventListener('scroll', () => {
   } else {
     navbar.classList.remove('navbar--scrolled')
   }
+})
+
+/* parallax effect for separator image */
+
+const parallax = document.querySelector('.separator-image')
+
+window.addEventListener('scroll', () => {
+  const scrolled = window.scrollY
+  parallax.style.backgroundPositionY = (scrolled * 0.4 + 100) + 'px'
 })

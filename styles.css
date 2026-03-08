@@ -214,13 +214,13 @@ html {
 
 /* separator section */
 
-.separator {
-  height: 300px;
+.separator-image {
   width: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  width: 100%;
+  height: 200px; 
+  background-image: url('images/Separator.jpeg');
+  background-size: cover;
+  background-position: center;
   border-top: var(--primary-color) 4px solid;
   border-bottom: var(--primary-color) 4px solid;
 }
