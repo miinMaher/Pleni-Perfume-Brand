@@ -112,7 +112,7 @@ html {
 
 @keyframes shrinkLogo {
   from {
-    font-size: 200px;
+    font-size: 300px;
   }
 
   to {
@@ -128,7 +128,7 @@ html {
   line-height: 1;
   animation: shrinkLogo linear;
   animation-timeline: scroll();
-  animation-range: 0px 172px;
+  animation-range: 0px 272px;
 }
 
 .navbar--scrolled .nav__logo {
@@ -138,7 +138,7 @@ html {
 /* hero section */
 
 .hero-section {
-  margin-top: 234px;
+  margin-top: 334px;
   height: 450px;
   display: flex;
   align-items: stretch;
