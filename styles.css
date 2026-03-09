@@ -9,6 +9,7 @@
   /* eyebrow labels, hover states */
   --page-background: #FFF8F0;
   /* main site background */
+  --page-background-alt: #F2E8DF;
   --body-text: #1A1A1A;
   /* all main text */
   --muted-text: #555555;
@@ -93,6 +94,7 @@ html {
   border-bottom: var(--border);
   z-index: 100;
   transition: padding 0.4s ease;
+  background-color: var(--page-background-alt);
 }
 
 .nav__links {
@@ -148,7 +150,7 @@ html {
   margin-right: auto;
   display: flex;
   align-items: stretch;
-  justify-content: center;
+  justify-content: center; 
 }
 
 /* hero primary content */
@@ -198,6 +200,8 @@ html {
   color: var(--secondary-color);
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 1px solid rgba(255, 45, 120, 0.2);
 }
 
 .hero__title {
@@ -208,6 +212,7 @@ html {
   max-width: 400px;
   line-height: 110%;
   margin-bottom: -10px;
+  letter-spacing: -0.02em;
 }
 
 .hero-title-span {
@@ -217,10 +222,11 @@ html {
 
 .hero__subtitle {
   font-family: var(--body-font);
-  font-size: 18px;
-  color: var(--body-text);
+  font-size: 15px;
+  color: var(--muted-text);
   max-width: 400px;
   margin-bottom: 20px;
+  line-height: 1.7;
 }
 
 .hero-button {
@@ -308,6 +314,7 @@ html {
   align-items: center;
   gap: var(--spacing-lg);
   border-bottom: var(--border);
+  background-color: var(--page-background-alt);
 }
 
 .about__visual {
@@ -373,11 +380,21 @@ html {
 
 .about__body {
   font-family: var(--body-font);
-  font-size: 17px;
+  font-size: 16px;
   color: var(--muted-text);
   line-height: 1.7;
   max-width: 480px;
 }
+  
+.about__content :nth-child(3){
+  margin-bottom: -20px;
+}
+
+.about__body + .about__body {
+  padding-top: var(--spacing-sm);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
 
 .about__values {
   list-style: none;
