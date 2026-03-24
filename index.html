@@ -1,181 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pleni</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <nav class="navbar">
-            <a href="#" class="nav__logo">PLENI</a>
 
-            <ul class="nav__links">
-                <li><a href="#hero" class="nav__link">
-                <span class="text-hover">Home</span>
-                <span class="text-original">Home</span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pleni</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#" class="nav__logo">PLENI</a>
+
+        <ul class="nav__links">
+            <li><a href="#hero" class="nav__link">
+                    <span class="text-hover">Home</span>
+                    <span class="text-original">Home</span>
                 </a></li>
-                <li><a href="#about" class="nav__link">
-                <span class="text-hover">About</span>
-                <span class="text-original">About</span>
+            <li><a href="#about" class="nav__link">
+                    <span class="text-hover">About</span>
+                    <span class="text-original">About</span>
                 </a></li>
-                <li><a href="#contact" class="nav__link">
-                <span class="text-hover">Contact</span>
-                <span class="text-original">Contact</span>
+            <li><a href="#contact" class="nav__link">
+                    <span class="text-hover">Contact</span>
+                    <span class="text-original">Contact</span>
                 </a></li>
-            </ul>
-        </nav>
-        
-        <section class="hero-section" id="hero">
-            <div class="hero-curve"></div>
-            <div class="hero-curve1"></div>
-            <div class="hero-curve2"></div>
-            <div class="hero__text">
-                <span class="hero__eyebrow">New Collection</span>
-                <h1 class="hero__title">Wear Your <span class="hero-title-span">Abundance.</span></h1>
-                <p class="hero__subtitle">
+        </ul>
+    </nav>
+
+    <section class="hero-section" id="hero">
+        <div class="hero-curve"></div>
+        <div class="hero-curve1"></div>
+        <div class="hero-curve2"></div>
+        <div class="hero__text">
+            <span class="hero__eyebrow">New Collection</span>
+            <h1 class="hero__title">Wear Your <span class="hero-title-span">Abundance.</span></h1>
+            <p class="hero__subtitle">
                 Pleni is perfume for people who feel everything. Rich, bold, and unapologetically alive.
-                </p>
-                <div>
-                    <a class="btn btn--primary hero-button" href="#about">Discover Pleni</a>
-                    <a class="btn btn--ghost hero-button" href="#contact">Get in Touch</a>
-                </div>
+            </p>
+            <div class="hero-buttons">
+                <a class="btn btn--primary hero-button" href="#about">Discover Pleni</a>
+                <a class="btn btn--ghost hero-button" href="#contact">Get in Touch</a>
             </div>
+        </div>
 
-            <div class="hero__visual">
-                <img class="hero-image" src="images/hero.jpeg">
-            </div>
+        <div class="hero__visual">
+            <img class="hero-image" src="images/hero.jpeg">
+        </div>
 
-            <div class="hero__arc">
-                <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-                    
-                    <!-- outer arc -->
-                    <path id="arc1" d="M 200,10 A 190,190 0 1,1 199.99,10" fill="none"/>
-                    <text>
+        <div class="hero__arc">
+            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+
+                <!-- outer arc -->
+                <path id="arc1" d="M 200,10 A 190,190 0 1,1 199.99,10" fill="none" />
+                <text>
                     <textPath href="#arc1" startOffset="0%">
-                        · NEW COLLECTION · NEW COLLECTION · NEW COLLECTION · NEW COLLECTION · NEW COLLECTION · NEW COLLECTION · NEW COLLECTION · NEW COLLECTION · ====  
+                        · NEW COLLECTION · NEW COLLECTION · NEW COLLECTION · NEW COLLECTION · NEW COLLECTION · NEW
+                        COLLECTION · NEW COLLECTION · NEW COLLECTION · ====
                     </textPath>
-                    </text>
+                </text>
 
-                    <!-- middle arc -->
-                    <path id="arc2" d="M 200,60 A 140,140 0 1,1 199.99,60" fill="none"/>
-                    <text>
+                <!-- middle arc -->
+                <path id="arc2" d="M 200,60 A 140,140 0 1,1 199.99,60" fill="none" />
+                <text>
                     <textPath href="#arc2" startOffset="0%">
-                        · PLENI · PERFUME · PLENI · PERFUME · PLENI · PERFUME · PLENI · PERFUME · PLENI · PERFUME · PLENI · PERFUME · PLENI · ==
+                        · PLENI · PERFUME · PLENI · PERFUME · PLENI · PERFUME · PLENI · PERFUME · PLENI · PERFUME ·
+                        PLENI · PERFUME · PLENI · ==
                     </textPath>
-                    </text>
+                </text>
 
-                    <!-- inner arc -->
-                    <path id="arc3" d="M 200,110 A 90,90 0 1,1 199.99,110" fill="none"/>
-                    <text>
+                <!-- inner arc -->
+                <path id="arc3" d="M 200,110 A 90,90 0 1,1 199.99,110" fill="none" />
+                <text>
                     <textPath href="#arc3" startOffset="0%">
                         --------------------------------------------------------------------------------------------
                     </textPath>
-                    </text>
+                </text>
 
-                </svg>
+            </svg>
+        </div>
+    </section>
+
+    <section class="separator-image"></section>
+
+    <section class="about-section" id="about">
+        <div class="about__visual">
+            <div class="about-side">
+                <h1 class="about-side__title">· OUR STORY</h1>
             </div>
-        </section>
+            <div class="about__image-placeholder">
+                <img class="about-image" src="images/about.jpeg">
+            </div>
+        </div>
+        <div class="about__content">
+            <p class="section__eyebrow">Our Story</p>
 
-        <section class="separator-image"></section>
-
-        <section class="about-section" id="about">
-            <div class="about__visual">
-                <div class="about-side">
-                    <h1 class="about-side__title">· OUR STORY</h1>
-                </div>
-                <div class="about__image-placeholder">
-                    <img class="about-image" src="images/about.jpeg">
-                </div>
-           </div>
-            <div class="about__content">
-                <p class="section__eyebrow">Our Story</p>
-
-                <h2 class="about__title">
+            <h2 class="about__title">
                 Born from the belief that more is more.
-                </h2>
+            </h2>
 
-                <p class="about__body">
-                Pleni started as a rebellion against the quiet. Against the minimal, the muted, the politely restrained. We make perfume for people who walk into a room and own it.
-                </p>
+            <p class="about__body">
+                Pleni started as a rebellion against the quiet. Against the minimal, the muted, the politely restrained.
+                We make perfume for people who walk into a room and own it.
+            </p>
 
-                <p class="about__body">
-                Every Pleni scent is a statement — layered, complex, and built to linger. Because why whisper when you can blaze?
-                </p>
+            <p class="about__body">
+                Every Pleni scent is a statement — layered, complex, and built to linger. Because why whisper when you
+                can blaze?
+            </p>
 
-                <ul class="about__values">
+            <ul class="about__values">
                 <li>Abundance over restraint</li>
                 <li>Art over formula</li>
                 <li>Boldness over subtlety</li>
-                </ul>
+            </ul>
+        </div>
+
+    </section>
+
+    <section class="separator-image separator-contact"></section>
+
+    <section class="contact-section" id="contact">
+        <form class="form-grid">
+            <h2 class="contact__title contact-grid-item">Let's talk about scent.</h2>
+            <div class="form__group contact-grid-item" id="form-name">
+                <input type="text" id="name" class="form__input" placeholder="What should we call you?" required>
             </div>
 
-        </section>
-
-        <section class="separator-image separator-contact"></section>
-
-        <section class="contact-section" id="contact">  
-            <form class="form-grid">
-                <h2 class="contact__title contact-grid-item">Let's talk about scent.</h2> 
-                <div class="form__group contact-grid-item" id="form-name">
-                    <input type="text" id="name" class="form__input" placeholder="What should we call you?" required> 
-                </div>
-
-                <div class="form__group contact-grid-item" id="form-email">
-                    <input type="email" id="email" class="form__input" placeholder="your@email.com" required>           
-                </div>
-                <div class="form__group contact-grid-item" id="form-message">
-                    <div class="contact-message-container">
-                        <textarea id="message" class="form__textarea" placeholder="Tell us what's on your mind..." rows="5" required></textarea> 
-                        <div class="btn-wrap">
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                            <span class="corner top-left"></span>
-                            <span class="corner top-right"></span>
-                            <span class="corner bottom-left"></span>
-                            <span class="corner bottom-right"></span>
-                        </div>
+            <div class="form__group contact-grid-item" id="form-email">
+                <input type="email" id="email" class="form__input" placeholder="your@email.com" required>
+            </div>
+            <div class="form__group contact-grid-item" id="form-message">
+                <div class="contact-message-container">
+                    <textarea id="message" class="form__textarea" placeholder="Tell us what's on your mind..." rows="5"
+                        required></textarea>
+                    <div class="btn-wrap">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <span class="corner top-left"></span>
+                        <span class="corner top-right"></span>
+                        <span class="corner bottom-left"></span>
+                        <span class="corner bottom-right"></span>
                     </div>
                 </div>
+            </div>
 
-                <div class="contact-social contact-grid-item">
-                    <div class="social-links-container">
-                        <div class="social-cap-top"></div>
-                        <div class="social-links">
-                            <a href="#" class="social-link">Instagram</a>
-                            <a href="#" class="social-link">TikTok</a>
-                            <a href="#" class="social-link">Pinterest</a>
-                        </div>
+            <div class="contact-social contact-grid-item">
+                <div class="social-links-container">
+                    <div class="social-cap-top"></div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">TikTok</a>
+                        <a href="#" class="social-link">Pinterest</a>
                     </div>
                 </div>
+            </div>
 
-                <div class="contact-extra extra2">
+            <div class="contact-extra extra2">
 
-                </div>
-                
-            </form>
-        </section>
+            </div>
 
-        <footer id="footer">
-            <div class="footer__inner">
-                <div class="footer__links">
+        </form>
+    </section>
+
+    <footer id="footer">
+        <div class="footer__inner">
+            <div class="footer__links">
                 <nav class="footer__nav">
                     <a href="#hero" class="footer__link">Home</a>
                     <a href="#about" class="footer__link">About</a>
                     <a href="#contact" class="footer__link">Contact</a>
                 </nav>
-                
-                </div>
-                <div class="footer__logo-block">
+
+            </div>
+            <div class="footer__logo-block">
                 <div class="footer__logo">PLENI</div>
                 <p class="footer__tagline">Abundance in every scent.</p>
-                </div>  
             </div>
-            <div class="footer__bottom">
-                <p class="footer__copy">© 2025 Pleni. All rights reserved.</p>
-                <p class="footer__copy">Made with bold intentions.</p>
-            </div>
-        </footer>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copy">© 2025 Pleni. All rights reserved.</p>
+            <p class="footer__copy">Made with bold intentions.</p>
+        </div>
+    </footer>
 
-        <script src="script.js"></script>
-    </body>
+    <script src="script.js"></script>
+</body>
+
 </html>

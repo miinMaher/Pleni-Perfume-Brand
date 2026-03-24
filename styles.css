@@ -267,11 +267,18 @@ html {
   line-height: 1.7;
 }
 
+.hero-buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-sm);
+}
+
 .hero-button {
   width: auto;
   height: fit-content;
   display: inline-block;
-  margin-right: var(--spacing-sm);
+  border-radius: 20px;
+  padding: 16px 36px;
 }
 
 /* hero image */
@@ -357,7 +364,7 @@ html {
   gap: var(--spacing-lg);
   border-bottom: var(--border);
   background-color: var(--page-background-alt);
-  scroll-margin-top: 130px;
+  scroll-margin-top: 110px;
 }
 
 .about__visual {
@@ -668,9 +675,7 @@ html {
   height: 12px;
 }
 
-.contact-extra {
-  
-}
+.contact-extra {}
 
 .contact-social {
   grid-area: 2 / 1 / 3 / 2;
@@ -729,7 +734,7 @@ html {
   transition: color 0.3s ease;
 }
 
-.social-link:hover{
+.social-link:hover {
   color: var(--secondary-color)
 }
 
