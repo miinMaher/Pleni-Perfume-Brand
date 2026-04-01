@@ -504,13 +504,15 @@ html {
 .subscribe-section {
   background-color: var(--page-background);
   padding: var(--spacing-xl) var(--spacing-lg);
+  height: min-content;
 }
 
 .subscribe-inner {
-  max-width: 800px;
+  width: 900px;
+  height: min-content;
   margin: 0 auto;
   border: var(--border);
-  padding: var(--spacing-lg);
+  padding: var(--spacing-md) var(--spacing-lg);
   background-color: var(--white);
   text-align: center;
   display: flex;
@@ -525,6 +527,7 @@ html {
   color: var(--primary-color);
   text-transform: uppercase;
   letter-spacing: -0.02em;
+  margin-bottom: -35px;
 }
 
 .subscribe-subtitle {
@@ -534,6 +537,7 @@ html {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   font-weight: 700;
+  margin-bottom: 10px;  
 }
 
 .subscribe-form {
@@ -557,10 +561,17 @@ html {
   opacity: 0.3;
 }
 
-.subscribe-form .btn-primary {
-  border-radius: 0;
+.subscribe-form .btn--primary {
+  padding: 20px var(--spacing-lg);
+  font-size: 24px;
+  font-family: var(--heading-font);
+  font-weight: 300;
+  font-style: italic;
 }
-
+.subscribe-form .btn--primary:hover{
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
 /* footer */
 
 footer {
