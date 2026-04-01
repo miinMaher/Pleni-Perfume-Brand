@@ -1,14 +1,15 @@
 
 /* navbar scroll effect  DO NOT TOUCH */
-
+if (window.location.pathname === '/' || window.location.pathname.includes('index.html')) {
 window.addEventListener('scroll', () => {
-  const navbar = document.querySelector('.navbar')
+  const navbar = document.querySelector('.navbar-home')
   if (window.scrollY > 272) {
     navbar.classList.add('navbar--scrolled')
   } else {
     navbar.classList.remove('navbar--scrolled')
   }
 })
+}
 
 /* parallax effect for separator image */
 const parallax = document.querySelector('.separator-image')
