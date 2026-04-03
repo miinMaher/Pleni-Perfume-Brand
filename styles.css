@@ -484,6 +484,8 @@ body::-webkit-scrollbar {
   font-family: var(--heading-font);
   font-weight: 300;
   font-style: italic;
+  transition: background-color 0.3s;
+  transition-delay: 1ms;
 }
 .subscribe-form .btn--primary:hover{
   background-color: var(--secondary-color);
