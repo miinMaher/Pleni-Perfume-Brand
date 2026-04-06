@@ -288,9 +288,10 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-self: center;
   gap: var(--spacing-sm);
   padding: var(--spacing-md);
-  margin-bottom: var(--spacing-md);
+  margin-bottom: -200px;
   z-index: 1;
 }
 
